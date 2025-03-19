@@ -7,7 +7,7 @@ const Recommendations = ({ accessToken, refreshToken }) => {
   useEffect(() => {
     const fetchRecommendations = async () => {
       try {
-        const response = await fetch(`http://localhost:8888/recommendations?access_token=${accessToken}&refresh_token=${refreshToken}`, {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_API_URL}/recommendations?access_token=${accessToken}&refresh_token=${refreshToken}`, {
           method: 'GET',
         });
 
