@@ -1,0 +1,40 @@
+/* Flexbox layout for the recommendations container */
+#recommendations {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+ gap:10%;
+}
+
+#recommendation {
+  width: 30%; 
+  min-width: 250px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+ 
+}
+.rec-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width:80vw;
+}
+#recommendation > img {
+  width: 200px;
+  height:200px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.embed-responsive {
+  margin-top: 10px;
+  width:90%;
+  height:100%;
+}
